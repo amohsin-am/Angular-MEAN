@@ -1,59 +1,152 @@
-# MyApp
+# 🧩 Angular MEAN Project – User Management System
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+---
 
-## Development server
+## 📌 Project Title  
+**User Management System**
 
-To start a local development server, run:
+---
 
+## 📋 Description  
+A full-stack web application built using the MEAN stack (MongoDB, Express.js, Angular, and Node.js). The system allows users to manage their profile data, while providing admin users the ability to manage the entire system through a secured dashboard. The project demonstrates the integration of a frontend Angular app with a backend API, storing data in MongoDB.
+
+---
+
+## 🧑‍💻 Technologies Used  
+
+| Layer     | Tech Stack                      |
+|-----------|---------------------------------|
+| Frontend  | Angular                         |
+| Backend   | Node.js + Express.js            |
+| Database  | MongoDB                         |
+| Runtime   | Node.js                         |
+| Styling   | Angular Material / Bootstrap    |
+| Tools     | Visual Studio Code, Git, GitHub |
+
+---
+
+## ⚙️ Installation & Setup Instructions
+
+### ✅ Prerequisites  
+- Node.js & npm installed  
+- Angular CLI installed globally (`npm install -g @angular/cli`)  
+- MongoDB running locally or Atlas DB connected  
+- Git installed  
+
+---
+
+### 💻 Clone the Repository  
 ```bash
+git clone https://github.com/yourusername/Angular-MEAN.git
+cd Angular-MEAN
+
+🚀 Backend Setup
+cd backend
+npm install
+
+⚙️ Frontend Setup
+cd ../
+npm install
+
+🧪 Run MongoDB (if local)
+
+Ensure MongoDB service is running or update DB connection string in backend/server.js
+
+▶️ Start Backend Server
+node backend/server.js
+
+▶️ Start Angular Frontend
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+Open browser and navigate to:
+👉 http://localhost:4200
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+🗂️ Project Structure
+Angular-MEAN/
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── node_modules/
+│   └── server.js
+├── src/
+│   ├── app/
+│   ├── assets/
+│   ├── environments/
+│   ├── index.html
+│   └── styles.css
+├── public/
+├── package.json
+├── angular.json
+└── README.md
 
-```bash
-ng generate component component-name
-```
+🌐 Features
+👤 User Panel
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Home page
 
-```bash
-ng generate --help
-```
+Contact page
 
-## Building
+User info form page
 
-To build the project run:
+Info list and detail pages
 
-```bash
-ng build
-```
+Profile management
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+🔐 Admin Panel
 
-## Running unit tests
+Add/Edit/Delete users
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Add/Edit/Delete products
 
-```bash
-ng test
-```
+View full user info
 
-## Running end-to-end tests
+Manage all system data from dashboard
 
-For end-to-end (e2e) testing, run:
+🧼 Security & Clean Code
 
-```bash
-ng e2e
-```
+✅ No hardcoded passwords, API keys, or secrets committed
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+✅ .gitignore in place to avoid committing node_modules, .env, etc.
 
-## Additional Resources
+✅ Sensitive data handled securely
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+To double-check, run:
+
+git grep -i 'password\|secret\|apikey\|token'
+
+🧪 Testing Criteria
+
+App starts without errors ✅
+
+GET request loads user list ✅
+
+POST request adds a new user to database ✅
+
+📑 Future Improvements
+
+Add JWT-based authentication
+
+Add form validation using Angular Reactive Forms
+
+Add product image uploads
+
+Setup deployment on Vercel/Render/Heroku
+
+🤝 Contributions
+
+This project is proudly created and maintained by:
+
+Abdul
+
+With help from:
+
+Abhay
+GitHub
+Google
+ChatGPT
+Gemini
+
+📃 License
+
+This project is licensed under the MIT License
