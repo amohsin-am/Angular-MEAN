@@ -1,0 +1,28 @@
+<div class="container mt-5">
+  <h2 class="mb-4">User List</h2>
+  <div *ngIf="users.length === 0" class="alert alert-info">
+    No users found.
+  </div>
+  <table class="table table-striped" *ngIf="users.length > 0">
+    <thead class="bg-success text-white">
+  <tr>
+    <th>Username</th>
+    <th>Age</th>
+    <th>City</th>
+    <th>Hobby</th>
+    <th>Actions</th>
+  </tr>
+</thead>
+    <tbody>
+  <tr *ngFor="let user of users">
+    <td>{{ user.user_name }}</td>
+    <td>{{ user.age }}</td>
+    <td>{{ user.city }}</td>
+    <td>{{ user.user_hobby }}</td>
+    <td>
+      <a [routerLink]="['/edit-user', user._id]" class="btn btn-sm btn-warning">Edit</a>
+    </td>
+  </tr>
+</tbody>
+  </table>
+</div>

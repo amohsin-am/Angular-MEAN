@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <h2>Add New User</h2>
+  <form (ngSubmit)="addUser()" #userForm="ngForm">
+    <div class="mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" id="username" class="form-control" required [(ngModel)]="user.user_name" name="user_name">
+    </div>
+
+    <div class="mb-3">
+      <label for="age" class="form-label">Age</label>
+      <input type="number" id="age" class="form-control" required [(ngModel)]="user.age" name="age">
+    </div>
+
+    <div class="mb-3">
+      <label for="city" class="form-label">City</label>
+      <input type="text" id="city" class="form-control" required [(ngModel)]="user.city" name="city">
+    </div>
+
+    <div class="mb-3">
+      <label for="hobby" class="form-label">Hobby</label>
+      <input type="text" id="hobby" class="form-control" [(ngModel)]="user.user_hobby" name="user_hobby">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save User</button>
+  </form>
+</div>

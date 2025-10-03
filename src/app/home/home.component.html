@@ -1,0 +1,8 @@
+<h2>Welcome to Mohsin's User App</h2>
+
+<app-info-card 
+  *ngFor="let item of descriptions"
+  [title]="item.title"
+  [description]="item.description"
+  [imageUrl]="item.imageUrl">
+</app-info-card>
