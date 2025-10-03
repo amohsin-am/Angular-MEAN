@@ -135,10 +135,6 @@ Setup deployment on Vercel/Render/Heroku
 
 🤝 Contributions
 
-This project is proudly created and maintained by:
-
-Abdul
-
 With help from:
 
 Abhay
